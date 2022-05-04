@@ -1,0 +1,8 @@
+name:'first-workflow'
+on:[pull_request]
+jobs:
+  check-out-repo:
+    run-on:ubuntu-latest
+    steps:
+      -name:'add checkout feature'
+       uses:actions/checkout
